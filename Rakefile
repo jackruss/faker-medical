@@ -5,8 +5,8 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "faker-medical"
-    gem.summary = %Q{Faker Extension}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{Faker Extension for Medical Numbers}
+    gem.description = %Q{This gem is an extension of the Faker Gem to generate SSN, DEA, and NPI Numbers}
     gem.email = "thing2@jackhq.com"
     gem.homepage = "http://github.com/jackhq/faker-medical"
     gem.authors = ["Tom & Russell"]
