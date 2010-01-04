@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{faker-medical}
-  s.version = "0.0.1"
+  s.version = "0.1.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Tom & Russell"]
-  s.date = %q{2009-12-03}
+  s.date = %q{2010-01-04}
   s.description = %q{This gem is an extension of the Faker Gem to generate SSN, DEA, and NPI Numbers}
   s.email = %q{thing2@jackhq.com}
   s.extra_rdoc_files = [
@@ -22,9 +22,16 @@ Gem::Specification.new do |s|
      "LICENSE",
      "README.rdoc",
      "Rakefile",
-     "lib/faker-dea.rb",
-     "lib/faker-npi.rb",
-     "lib/faker-ssn.rb",
+     "faker-medical.gemspec",
+     "lib/faker_dea.rb",
+     "lib/faker_npi.rb",
+     "lib/faker_patient.rb",
+     "lib/faker_ssn.rb",
+     "spec/lib/faker_dea_spec.rb",
+     "spec/lib/faker_patient_spec.rb",
+     "spec/lib/faker_ssn_spec.rb",
+     "spec/spec.opts",
+     "spec/spec_helper.rb",
      "test/helper.rb",
      "test/test_faker-medical.rb",
      "version.yml"
@@ -35,7 +42,11 @@ Gem::Specification.new do |s|
   s.rubygems_version = %q{1.3.5}
   s.summary = %q{Faker Extension for Medical Numbers}
   s.test_files = [
-    "test/helper.rb",
+    "spec/lib/faker_dea_spec.rb",
+     "spec/lib/faker_patient_spec.rb",
+     "spec/lib/faker_ssn_spec.rb",
+     "spec/spec_helper.rb",
+     "test/helper.rb",
      "test/test_faker-medical.rb"
   ]
 
