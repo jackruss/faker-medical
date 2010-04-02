@@ -6,6 +6,11 @@ module Faker
         gender = ['M','F']
         gender[rand(2)]
       end
+      
+      def dob  
+        Date.parse("#{rand(12) + 1}/#{rand(28) + 1}/19#{format("%02d", rand(99))}" )
+      end
+      
     end
       
    end
