@@ -11,4 +11,9 @@ describe Faker::Patient do
       Faker::Patient.dob.should be_true
     end
   end
+  
+  it "should return basic phone number" do
+    Faker::Patient.phone_number.should =~ /^[0-9]{3}-[0-9]{3}-[0-9]{4}$/
+  end
+  
 end

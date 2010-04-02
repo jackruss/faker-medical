@@ -11,6 +11,11 @@ module Faker
         Date.parse("#{rand(12) + 1}/#{rand(28) + 1}/19#{format("%02d", rand(99))}" )
       end
       
+      def phone_number
+        Faker.numerify("###-###-####")
+      end
+      
+      
     end
       
    end
