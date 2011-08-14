@@ -1,0 +1,8 @@
+# 8/14/2011 
+* Fixed issue with working with 0.9.5
+* Fixed Random Birth Date
+* UP Version
+
+# TODO
+* Refactor to more standardized gem
+* Add Documentation

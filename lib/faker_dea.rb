@@ -3,7 +3,7 @@ module Faker
     class << self
       def dea(type="A",last_name="Smith")
         prefix = type + last_name.split("")[0]
-        suffix = Faker.numerify('######')
+        suffix = Faker::Base.numerify('######')
         prefix + suffix + check_digit(suffix)
         
       end

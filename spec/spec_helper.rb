@@ -1,4 +1,3 @@
-require 'spec'
 require 'faker'
 require 'faker_dea'
 require 'faker_ssn'
