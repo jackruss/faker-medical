@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{faker-medical}
-  s.version = "0.4.0"
+  s.version = "0.5.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Tom & Russell"]
@@ -16,30 +16,7 @@ Gem::Specification.new do |s|
     "LICENSE",
     "README.rdoc"
   ]
-  s.files = [
-    ".document",
-    ".rspec",
-    "CHANGELOG",
-    "Gemfile",
-    "Gemfile.lock",
-    "LICENSE",
-    "README.rdoc",
-    "Rakefile",
-    "faker-medical.gemspec",
-    "lib/faker_dea.rb",
-    "lib/faker_npi.rb",
-    "lib/faker_patient.rb",
-    "lib/faker_ssn.rb",
-    "spec/lib/faker_dea_spec.rb",
-    "spec/lib/faker_npi_spec.rb",
-    "spec/lib/faker_patient_spec.rb",
-    "spec/lib/faker_ssn_spec.rb",
-    "spec/spec.opts",
-    "spec/spec_helper.rb",
-    "test/helper.rb",
-    "test/test_faker-medical.rb",
-    "version.yml"
-  ]
+  s.files = `git ls-files`.split("\n")
   s.homepage = %q{http://github.com/jackhq/faker-medical}
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.6.2}
