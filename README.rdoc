@@ -2,9 +2,9 @@
 
 You can generate the following data elements:
 
-Faker::Ssn.en_ssn - generates a Social Security Number
-Faker::Dea.dea - genearates a DEA Number
-Faker::Patient.gender - generates a patient gender (M|F)
+* Faker::Ssn.en_ssn - generates a Social Security Number
+* Faker::Dea.dea - genearates a DEA Number
+* Faker::Patient.gender - generates a patient gender (M|F)
 
 == Note on Patches/Pull Requests
  
