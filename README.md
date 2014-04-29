@@ -3,10 +3,10 @@
 You can generate the following data elements:
 
 ## Usage
-### Faker::DEA
+### Faker::Medical::DEA
 * `Faker::DEA.dea` - generates a DEA Number
 
-### Faker::NPI
+### Faker::Medical::NPI
 ```ruby
 # Generates a 10-digit National Provider Identifier
 Faker::NPI.npi # => "7419588454"
@@ -14,14 +14,19 @@ Faker::NPI.npi # => "7419588454"
 Faker::NPI.valid?("1490626178") # => false
 ```
 
-### Faker::Patient
+### Faker::Medical::Patient
 ```ruby
+# TODO: Update this section
+
 # Generates a patient gender (M|F)
 Faker::Patient.gender
 ```
 
-### Faker::SSN
-* `Faker::SSN.en_ssn` - generates a Social Security Number
+### Faker::Medical::SSN
+```ruby
+# Generates a Social Security Number
+Faker::SSN.ssn
+```
 
 ## Note on Patches/Pull Requests
 
