@@ -1,6 +1,4 @@
-source :rubygems
+source 'https://rubygems.org'
 
-gem 'jeweler'
-gem 'faker'
-
-gem 'rspec'
+# Specify your gem's dependencies in faker-medical.gemspec
+gemspec
