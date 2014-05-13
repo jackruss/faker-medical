@@ -2,30 +2,35 @@
 
 You can generate the following data elements:
 
-## Usage
 ### Faker::Medical::DEA
-* `Faker::DEA.dea` - generates a DEA Number
+Generate a [DEA Number](http://en.wikipedia.org/wiki/DEA_number)
+```ruby
+Faker::Dea.dea
+# => "AS3555565"
+```
 
 ### Faker::Medical::NPI
+Generates a 10-digit [National Provider Identifier](http://en.wikipedia.org/wiki/National_Provider_Identifier)
 ```ruby
-# Generates a 10-digit National Provider Identifier
-Faker::NPI.npi # => "7419588454"
+Faker::Npi.npi
+# => "7419588454"
 
-Faker::NPI.valid?("1490626178") # => false
+Faker::Npi.check_digits?("1490626178")
+# => false
 ```
 
 ### Faker::Medical::Patient
+Generate a patient gender - M or F:
 ```ruby
-# TODO: Update this section
-
-# Generates a patient gender (M|F)
 Faker::Patient.gender
+# => "F"
 ```
 
 ### Faker::Medical::SSN
+Generates a Social Security Number
 ```ruby
-# Generates a Social Security Number
-Faker::SSN.ssn
+Faker::Ssn.en_ssn
+# => "816-10-6425"
 ```
 
 ## Note on Patches/Pull Requests
