@@ -1,11 +1,11 @@
-require 'faker/medical/extensions/time'
+require_relative 'extensions/time'
 
 module Faker
   module Medical
     class Patient < Base
       class << self
         def date_of_birth
-          Time.random(:year_range => 80)
+          ::Time.random(:year_range => 80)
           #Date.parse("#{rand(12) + 1}/#{rand(27) + 1}/19#{format("%02d", rand(99))}" )
         end
         alias_method :dob, :date_of_birth
