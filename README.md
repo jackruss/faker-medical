@@ -29,7 +29,7 @@ Faker::Patient.gender
 ### Faker::Medical::SSN
 Generates a Social Security Number
 ```ruby
-Faker::Ssn.en_ssn
+Faker::Medical::SSN.ssn
 # => "816-10-6425"
 ```
 
